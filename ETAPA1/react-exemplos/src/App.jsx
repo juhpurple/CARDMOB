@@ -5,8 +5,14 @@ import './App.css'
 import Counter from './components/Counter'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
+  const [photos, setPhotos] = useState([]);
 
+  const fetchPhotos = async () => {
+    try {
+      const url = https://jsonplaceholder.typicode.com/albums/1/photos
+      const response = fetch(url);
+    }
   // function updateCount() {
   //   setCount(count+1);
   // }
